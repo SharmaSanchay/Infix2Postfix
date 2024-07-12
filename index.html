@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            background-color: gradient(rgb(151, 100, 100),blue,green);
+        }
+        html,body{
+            height:100%;
+            width:100%;
+        }
+        .bar{
+            width: 100%;
+            height:10%;
+             /* background-color: red;  */
+            padding-top: 50px;
+            
+            text-align: center;
+        }
+        main{
+            width: 100%;
+            height:90%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .imp{
+            width: 500px;
+            height:300px;
+            /* background-color: blue; */
+        }
+        .exp1{
+            margin-top:10px;
+            display: flex;
+            flex-direction: column;
+        }
+       #inifx{
+        height:40px;
+        /* margin-top:10px */
+       }
+        .exp2{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }#postfix{
+            height: 40px;
+            
+            border: 2px solid black;
+            border-radius: 7px;
+        }
+        .btn{
+            margin:10px;
+            border: 2px;
+            border-radius: 10px;
+            margin-top: 20px;
+
+        }
+        input{
+            border-radius: 5px;
+           
+        }
+.btn {
+	background-color:#334739;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:17px 41px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.btn:hover {
+	background-color:#586352;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+.aim{
+    padding: 10px;
+}
+#postfix{
+    padding: 10px;
+}
+.operationdone{
+    height: 700px;
+    width:500px;
+}
+table{
+    width: 100%;
+    visibility: hidden;
+    border-collapse: collapse;
+}
+table, th, td {
+  border:1px solid black;
+}
+    </style>
+</head>
+<body>
+    <header class="title">
+        <nav class="bar">
+            <h1>Infix to posfix</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="imp">
+              <div class="exp1">
+                <label for="infix">Infix</label> <br>
+                <input class="aim" type="text"  id="inifx" placeholder="Type infix expression">
+              </div>
+              <div class="exp2">
+                <label for="postfix">Postfix</label> <br>
+                <div type="text" id="postfix">
+                    <p class="ans"></p>
+              </div> <br>
+              <button class="btn" value ="click me" type="submit">Convert</button>
+
+              <div class="operationdone">
+                <table class="stepbystep">
+                    <thead>
+                        <tr>
+                            <th>Input</th>
+                            <th>Stack</th>
+                            <th>Output</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+              </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
